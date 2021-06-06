@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "475753418294",
+    "project_id": "authqlct-402a1",
+    "storage_bucket": "authqlct-402a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475753418294:android:fd38b39fccdb3d4b611297",
+        "android_client_info": {
+          "package_name": "com.example.conspendemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475753418294-72tdu60lfme6313oftf7ujcc0tlfd773.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3uvCU8_jw2c2zKYGFL44Lna6PvTk8oZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475753418294-72tdu60lfme6313oftf7ujcc0tlfd773.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
