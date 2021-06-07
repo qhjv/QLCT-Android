@@ -24,7 +24,6 @@ public class Home extends AppCompatActivity {
         TextView hellotext = findViewById(R.id.hellotext);
         TextView tientext = findViewById(R.id.tientext);
         themgd1 = findViewById(R.id.button6);
-        themgd2 = findViewById(R.id.button10);
         tonghop = findViewById(R.id.button7);
         ngansach = findViewById(R.id.button8);
         theodoi = findViewById(R.id.button9);
@@ -39,18 +38,13 @@ public class Home extends AppCompatActivity {
                   Home.this.startActivity(intent1);
             }
         });
-        themgd2.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                  Intent intent2 = new Intent(Home.this,ThemGiaoDich.class);
-                  Home.this.startActivity(intent2);
-            }
-        });
+
         //nút tổng hợp giao dịch
         tonghop.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-
+                Intent intent5 = new Intent(Home.this,ShowGD.class);
+                Home.this.startActivity(intent5);
             }
         });
         //nút lập ngân sách
@@ -65,7 +59,7 @@ public class Home extends AppCompatActivity {
         theodoi.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent4 = new Intent(Home.this,ThemNganSach.class);
+                Intent intent4 = new Intent(Home.this,Ngansach.class);
                 Home.this.startActivity(intent4);
             }
         });

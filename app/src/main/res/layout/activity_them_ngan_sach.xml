@@ -1,47 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    tools:context=".ThemNganSach">
+    tools:context=".ThemGD">
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="Mức chi"
+        android:id="@+id/textView2"
+        android:layout_width="159dp"
+        android:layout_height="35dp"
         android:gravity="center_vertical"
+        android:text="NHAP NGAY BAT DAU"
+        android:textAlignment="textStart"
+        android:textColor="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.293"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="159dp"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:text="NHAp NGAY KET THUC"
+        android:textAlignment="textStart"
+        android:textColor="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="165dp"
+        android:layout_height="43dp"
+        android:textColor="@color/purple_700"
+        android:text="NHAP SO TIEN"
+        android:textAlignment="textStart"
+        android:gravity="center_vertical"
+        tools:ignore="RtlCompat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116"
         />
 
     <EditText
-        android:id="@+id/muchi"
-        android:layout_width="match_parent"
-        android:layout_height="40dp" />
+        android:id="@+id/edittextsotien"
+        android:layout_width="228dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="So tien"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="Thời gian"
-        android:gravity="center_vertical"
-        />
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:id="@+id/thoigian"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="Them"
-        android:id="@+id/btn"
-        />
+        android:id="@+id/edittextngay1"
+        android:layout_width="228dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="ngay bat dau"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
 
     <Button
-        android:id="@+id/btn1"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="Xem danh sach" />
+        android:id="@+id/savebtn"
+        android:layout_width="161dp"
+        android:layout_height="69dp"
+        android:text="LUU "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.672" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/cancelbtn"
+        android:layout_width="161dp"
+        android:layout_height="69dp"
+        android:text="Cancle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.672" />
+
+    <Button
+        android:id="@+id/xoabtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.796" />
+
+    <EditText
+        android:id="@+id/edittextngay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ngay ket thuc"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542" />
+</androidx.constraintlayout.widget.ConstraintLayout>

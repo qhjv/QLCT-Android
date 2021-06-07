@@ -40,20 +40,15 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        />
-
-    <Button
-        android:id="@+id/button10"
         android:layout_width="300dp"
         android:layout_height="45dp"
         android:layout_marginBottom="10dp"
-        android:text="THEM GIAO DICH "
+        android:text="THEM GD "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintVertical_bias="0.373"/>
+
 
     <Button
         android:id="@+id/button7"
@@ -84,7 +79,7 @@
         android:id="@+id/button9"
         android:layout_width="300dp"
         android:layout_height="45dp"
-        android:text="THEO DOI SO DU"
+        android:text="KẾ HOẠCH CHI TIÊU"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,31 +1,64 @@
 package Adapter;
 
-public class NganSach {
-    private int id;
-    private long muchi;
-    private String thoigian;
+import java.io.Serializable;
+import java.sql.Date;
 
-    public NganSach(int id, long muchi, String thoigian) {
-        this.id = id;
-        this.muchi = muchi;
-        this.thoigian = thoigian;
+public class NganSach implements Serializable {
+    private int idngansach;
+    private int idkhachhang;
+    private float tongtien;
+    private Date startDate;
+    private Date endDate;
+
+    public NganSach() {
     }
 
-    public NganSach(long muchi, String thoigian) {
-        this.muchi = muchi;
-        this.thoigian = thoigian;
+    public NganSach(float tongtien, Date startDate, Date endDate) {
+        this.idngansach = idngansach;
+        this.idkhachhang = idkhachhang;
+        this.tongtien = tongtien;
+        this.startDate = startDate;
+        this.endDate = endDate;
     }
 
-    public int getId() {
-        return id;
+    public int getIdngansach() {
+        return idngansach;
     }
 
-    public long getMuchi() {
-        return muchi;
+    public void setIdngansach(int idngansach) {
+        this.idngansach = idngansach;
     }
 
-    public String getThoigian() {
-        return thoigian;
+    public int getIdkhachhang() {
+        return idkhachhang;
+    }
+
+    public void setIdkhachhang(int idkhachhang) {
+        this.idkhachhang = idkhachhang;
+    }
+
+    public float getTongtien() {
+        return tongtien;
+    }
+
+    public void setTongtien(float tongtien) {
+        this.tongtien = tongtien;
+    }
+
+    public Date getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
     }
 }
 
